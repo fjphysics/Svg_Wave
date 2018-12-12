@@ -1,0 +1,23 @@
+{
+  "name": "Svg_Wave",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjphysics/Svg_Wave.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fjphysics/Svg_Wave/issues"
+  },
+  "homepage": "https://github.com/fjphysics/Svg_Wave#readme"
+}
