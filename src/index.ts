@@ -1,3 +1,5 @@
+import SVG = require("./node_modules/svg.js/svg.js");
+
 // define document width and height
 var width = 450, height = 300
 
@@ -10,7 +12,7 @@ var lines = new Array(30);
 
 balls[0] = draw.circle(10, 10).move(0, 150).attr({ fill: '#f06' });
 
-for (i = 1; i <= 30; i++) {
+for (i:number = 1; i <= 30; i++) {
     balls[i] = balls[0].clone().dmove(10 * i, 0)    
 }
 
@@ -18,13 +20,13 @@ for (i = 0; i <= 29; i++) {
     lines[i] = draw.line(balls[i].cx(), balls[i].cy(), balls[i+1].cx(), balls[i+1].cy()).stroke({ width: 1 })
 }
 
-var lastTime;
+var lastTime:number;
 var animFrame;
 var elapsedTime = 0;
 // update is called on every animation step
-function update(dt) {
+function update(dt:number):void {
     elapsedTime += dt;
-    let wave=document.querySelector('#sd_wave').value;
+    let wave=Element document.querySelector('#sd_wave').value;
     for (i = 0; i <= 30; i++) {
         if(i<30)
                 lines[i].plot(balls[i].cx(), balls[i].cy(), balls[i+1].cx(), balls[i+1].cy());

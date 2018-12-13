@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/fjphysics/Svg_Wave/issues"
   },
-  "homepage": "https://github.com/fjphysics/Svg_Wave#readme"
+  "homepage": "https://github.com/fjphysics/Svg_Wave#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0",
+    "typescript": "^3.2.2"
+  }
 }
